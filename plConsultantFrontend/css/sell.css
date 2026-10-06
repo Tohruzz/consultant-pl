@@ -1,0 +1,159 @@
+body{
+    background-color: #f7f7f7;
+     background-image: url("/img/off-road-car-wilderness.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body > h2{
+    text-align: center;
+    color: #010736;
+    font-size: 22px;
+    margin: 45px 0 5px;
+}
+
+h1{
+    text-align: center;
+    color: #010736;
+    margin: 40px 0;
+}
+
+#sellForm{
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#sellForm div{
+    width: 100%;
+}
+
+#sellForm label{
+    display: block;
+    margin-bottom: 6px;
+    color: #010736;
+    font-weight: bold;
+}
+
+#sellForm input,
+#sellForm textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#sellForm input:focus,
+#sellForm textarea:focus{
+    outline: none;
+    border-color: #010736;
+}
+
+#sellForm textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+#sellForm div:has(#description){
+    grid-column: 1 / 3;
+}
+
+#sellForm button[type="submit"]{
+    grid-column: 1 / 3;
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    background-color: #010736;
+    color: white;
+    border: 2px solid #010736;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#sellForm button[type="submit"]:hover{
+    background-color: white;
+    color: #010736;
+}
+
+
+
+#successBox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#successContent{
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#successContent h2{
+    color: #010736;
+    margin-bottom: 15px;
+}
+
+#successContent p{
+    color: #555;
+    margin: 8px 0;
+}
+
+#successContent button{
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #010736;
+    color: white;
+    border: 2px solid #010736;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#successContent button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+
+
+
+@media (max-width: 600px){
+
+    #sellForm{
+        width: 94%;
+        display: block;
+        padding: 20px;
+    }
+
+    #sellForm div{
+        margin-bottom: 15px;
+    }
+
+    h1{
+        font-size: 25px;
+        margin: 30px 0;
+    }
+}

@@ -1,0 +1,248 @@
+body{
+    background-color: #f7f7f7;
+     background-image: url("/img/off-road-car-wilderness.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.adminNavbar{
+    background-color: #010736;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.adminNavbar h2{
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.adminLinks{
+    display: flex;
+    gap: 30px;
+}
+
+.adminLinks a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.adminLinks a:hover{
+    color: #C5942C;
+}
+
+#vehiclesSection,
+#enquirySection,
+#sellSection{
+    text-align: center;
+    color: #010736;
+    margin: 45px 0 25px;
+    scroll-margin-top: 90px;
+}
+
+body > button{
+    display: block;
+    margin: 30px auto;
+    padding: 11px 25px;
+
+    background-color: #010736;
+    color: white;
+
+    border: 2px solid #010736;
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+body > button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+#vehicleContainer{
+    width: 94%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#vehicleContainer > div{
+    background-color: white;
+    padding: 22px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.vehicleInfo h3{
+    color: #010736;
+    font-size: 21px;
+    margin: 0 0 15px;
+}
+
+.vehicleInfo p{
+    color: black;
+    margin: 9px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.vehicleInfo button{
+    padding: 8px 16px;
+    margin: 12px 5px 0 0;
+
+    background-color: #010736;
+    color: white;
+
+    border: 2px solid #010736;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+.vehicleInfo button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+#enquiryContainer{
+    width: 94%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#sellContainer{
+    width: 94%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#enquiryContainer > div,
+#sellContainer > div{
+    background-color: white;
+    padding: 22px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#enquiryContainer h3,
+#sellContainer h3{
+    color: #010736;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#enquiryContainer p,
+#sellContainer p{
+    color: #444;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+#enquiryContainer button,
+#sellContainer button{
+    padding: 8px 16px;
+    margin-top: 12px;
+
+    background-color: #010736;
+    color: white;
+
+    border: 2px solid #010736;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#enquiryContainer button:hover,
+#sellContainer button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+@media (max-width: 900px){
+
+    #vehicleContainer,
+    #enquiryContainer,
+    #sellContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px){
+
+    .adminNavbar{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .adminNavbar h2{
+        font-size: 21px;
+    }
+
+    .adminLinks{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .adminLinks a{
+        font-size: 14px;
+    }
+
+    #vehicleContainer,
+    #enquiryContainer,
+    #sellContainer{
+        width: 92%;
+        grid-template-columns: 1fr;
+    }
+
+    #vehiclesSection,
+    #enquirySection,
+    #sellSection{
+        font-size: 25px;
+        margin: 35px 0 20px;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .adminLinks{
+        gap: 10px;
+    }
+
+    .adminLinks a{
+        font-size: 13px;
+    }
+
+}

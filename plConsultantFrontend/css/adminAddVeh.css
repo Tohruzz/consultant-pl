@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+h1{
+    text-align: center;
+    color: #010736;
+    margin: 35px 0;
+}
+
+#addVehicleForm{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#addVehicleForm div{
+    width: 100%;
+}
+
+#addVehicleForm label{
+    display: block;
+    margin-bottom: 7px;
+    color: #010736;
+    font-weight: bold;
+}
+
+#addVehicleForm input,
+#addVehicleForm select,
+#addVehicleForm textarea{
+    width: 100%;
+    padding: 11px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#addVehicleForm input:focus,
+#addVehicleForm select:focus,
+#addVehicleForm textarea:focus{
+    outline: none;
+    border-color: #010736;
+}
+
+#addVehicleForm textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+#addVehicleForm input[type="file"]{
+    padding: 8px;
+}
+
+#addVehicleForm button{
+    padding: 10px 20px;
+    margin-right: 8px;
+    background-color: #010736;
+    color: white;
+    border: 2px solid #010736;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#addVehicleForm button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+@media (max-width: 600px){
+
+    #addVehicleForm{
+        width: 94%;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 26px;
+        margin: 30px 0;
+    }
+
+    #addVehicleForm button{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+}

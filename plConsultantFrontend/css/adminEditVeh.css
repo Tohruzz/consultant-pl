@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+h1{
+    text-align: center;
+    color: #010736;
+    margin: 35px 0;
+}
+
+#editVehicleForm{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#editVehicleForm div{
+    width: 100%;
+}
+
+#editVehicleForm label{
+    display: block;
+    margin-bottom: 7px;
+
+    color: #010736;
+    font-weight: bold;
+}
+
+#editVehicleForm input,
+#editVehicleForm select,
+#editVehicleForm textarea{
+    width: 100%;
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    background-color: white;
+
+    font-size: 15px;
+    color: #333;
+}
+
+#editVehicleForm select{
+    height: 44px;
+    cursor: pointer;
+}
+
+#editVehicleForm input:focus,
+#editVehicleForm select:focus,
+#editVehicleForm textarea:focus{
+    outline: none;
+    border-color: #010736;
+}
+
+#editVehicleForm textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+#editVehicleForm button{
+    padding: 10px 20px;
+    margin-right: 8px;
+
+    background-color: #010736;
+    color: white;
+
+    border: 2px solid #010736;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#editVehicleForm button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+#imageSection{
+    width: 90%;
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#imageSection h2{
+    color: #010736;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+#imageContainer{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+#imageContainer div{
+    text-align: center;
+}
+
+#imageContainer img{
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+#imageContainer button{
+    padding: 7px 14px;
+
+    background-color: #010736;
+    color: white;
+
+    border: 2px solid #010736;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#imageContainer button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+#imageSection input[type="file"]{
+    margin-right: 10px;
+
+    padding: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+#imageSection > button{
+    padding: 10px 18px;
+
+    background-color: #010736;
+    color: white;
+
+    border: 2px solid #010736;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#imageSection > button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+@media (max-width: 700px){
+
+    #editVehicleForm{
+        width: 94%;
+        padding: 20px;
+    }
+
+    #imageSection{
+        width: 94%;
+        padding: 20px;
+    }
+
+    #imageContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #imageContainer img{
+        height: 120px;
+    }
+}
+
+@media (max-width: 450px){
+
+    #imageContainer{
+        grid-template-columns: 1fr;
+    }
+
+    #editVehicleForm button{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #imageSection > button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}

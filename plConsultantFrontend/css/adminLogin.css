@@ -1,0 +1,86 @@
+body{
+    
+    background-color: #f7f7f7;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginContainer{
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+#loginContainer h1{
+    text-align: center;
+    color: #010736;
+    margin-bottom: 30px;
+}
+
+#loginForm div{
+    margin-bottom: 20px;
+}
+
+#loginForm label{
+    display: block;
+    color: #010736;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+#loginForm input{
+    width: 100%;
+    padding: 11px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#loginForm input:focus{
+    outline: none;
+    border-color: #010736;
+}
+
+#loginForm button{
+    width: 100%;
+    padding: 11px;
+    background-color: #010736;
+    color: white;
+    border: 2px solid #010736;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#loginForm button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+#errorMessage{
+    display: none;
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 500px){
+    #loginContainer{
+        width: 85%;
+        padding: 25px;
+    }
+}

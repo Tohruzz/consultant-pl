@@ -1,0 +1,211 @@
+body{
+    background-color: #f7f7f7;
+     background-image: url("/img/off-road-car-wilderness.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body > h2{
+    text-align: center;
+    color: #010736;
+    font-size: 22px;
+    margin: 45px 0 35px;
+}
+
+#contactContainer{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    padding-bottom: 50px;
+}
+
+#contactInfo,
+#contactForm{
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+    border: 1px solid #010736;
+}
+
+#contactInfo h2,
+#contactForm h2{
+    color: #010736;
+    margin-bottom: 25px;
+}
+
+#contactInfo p{
+    color: #444;
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+#contactForm div{
+    margin-bottom: 18px;
+}
+
+#contactForm label{
+    display: block;
+
+    color: #010736;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+#contactForm input,
+#contactForm textarea{
+    width: 100%;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus{
+    outline: none;
+
+    border-color: #010736;
+}
+
+#contactForm textarea{
+    height: 120px;
+
+    resize: vertical;
+}
+
+#contactForm button{
+    width: 100%;
+
+    padding: 11px;
+
+    background-color: #010736;
+
+    color: white;
+
+    border: 2px solid #010736;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+#contactForm button:hover{
+    background-color: white;
+
+    color: #010736;
+}
+
+#successBox{
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#successContent{
+    background-color: white;
+
+    width: 90%;
+    max-width: 400px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#successContent h2{
+    color: #010736;
+
+    margin-bottom: 15px;
+}
+
+#successContent p{
+    color: #555;
+
+    margin: 8px 0;
+}
+
+#successContent button{
+    width: 100px;
+
+    padding: 10px;
+
+    margin-top: 20px;
+
+    background-color: #010736;
+
+    color: white;
+
+    border: 2px solid #010736;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#successContent button:hover{
+    background-color: white;
+
+    color: #010736;
+}
+
+@media (max-width: 700px){
+
+    #contactContainer{
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    #contactInfo,
+    #contactForm{
+        padding: 22px;
+    }
+
+    body > h1{
+        font-size: 28px;
+
+        margin: 35px 0 25px;
+    }
+
+}

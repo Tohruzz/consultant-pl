@@ -1,0 +1,105 @@
+body{
+    background-color: #f7f7f7;
+    background-image: url("/img/off-road-car-wilderness.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body > h2{
+    text-align: center;
+    color: #010736;
+    font-size: 22px;
+    margin: 45px 0 35px;
+}
+
+#container{
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+#container > div{
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    box-shadow: 5px 10px 10px black;
+}
+#container > div:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+#container img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 9px;
+    display: block;
+}
+#container > div h2{
+    text-align: left;
+    color: #010736;
+    font-size: 23px;
+    margin: 17px 5px 12px;
+}
+#container > div p{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 8px 5px;
+}
+
+#container > div button{
+    width: 100%;
+    padding: 11px;
+    margin-top: 15px;
+    background-color: #010736;
+    color: white;
+    border: 2px solid #010736;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#container > div button:hover{
+    background-color: white;
+    color: #010736;
+}
+@media (max-width: 900px){
+    #container{
+        width: 94%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #container img{
+        height: 210px;
+    }
+}
+
+@media (max-width: 600px){
+    body > h2{
+        font-size: 27px;
+        margin: 35px 0 25px;
+    }
+    #container{
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    #container img{
+        height: 230px;
+    }
+    #container > div h2{
+        font-size: 21px;
+    }
+
+}

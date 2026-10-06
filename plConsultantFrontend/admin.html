@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+    <nav class="adminNavbar">
+        
+        <h2>Admin Panel</h2>
+
+        <div class="adminLinks">
+            <a href="#vehiclesSection">Available Vehicles</a>
+            <a href="#enquirySection">Customer Enquiries</a>
+            <a href="#sellSection">Sell Requests</a>
+            <a href="adminAddVeh.html">Add Vehicle</a>
+        </div>
+
+    </nav>
+
+
+    <h2 id="vehiclesSection">
+        Available Vehicles
+    </h2>
+   
+    <div id="vehicleContainer"></div>
+
+
+    <h2 id="enquirySection">
+        Customer Enquiries
+    </h2>
+
+    <div id="enquiryContainer"></div>
+
+
+    <h2 id="sellSection">
+        Sell Requests
+    </h2>
+
+    <div id="sellContainer"></div>
+    <footer style="margin-top: 50px;">
+        <div id="footerBottom">
+        <p> © 2026 PL Auto Consultant. All rights reserved.</p>
+        <a style="color: white;" href="index.html">Home</a>
+    </div>
+    </footer>
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

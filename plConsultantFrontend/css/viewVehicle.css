@@ -1,0 +1,153 @@
+body{
+    background-color: #f7f7f7;
+     background-image: url("/img/off-road-car-wilderness.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body > h2{
+    text-align: center;
+    color: #010736;
+    font-size: 22px;
+    margin: 45px 0 5px;
+}
+#vehicleDetails{
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    border: 1px solid #010736;
+}
+
+
+
+#imageContainer{
+    width: 100%;
+}
+
+
+#vehicleCarousel{
+    width: 100%;
+}
+
+
+#mainImage{
+    width: 100%;
+    height: 400px;
+}
+
+
+#mainVehicleImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+
+
+#thumbnails{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+
+.thumbnail{
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.thumbnail:hover{
+    border-color: #010736;
+}
+
+
+
+
+#vehicleInfo{
+    padding: 20px 10px;
+}
+
+
+#vehicleInfo h2{
+    color: #010736;
+    font-size: 30px;
+    margin: 0 0 25px 0;
+}
+
+
+#vehicleInfo p{
+    color: black;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+#vehicleInfo button{
+    width: 180px;
+    padding: 10px;
+    margin-top: 20px;
+
+    background-color: #010736;
+    color: white;
+
+    border: 2px solid #010736;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+#vehicleInfo button:hover{
+    background-color: white;
+    color: #010736;
+}
+
+@media (max-width: 700px){
+    #vehicleDetails{
+        width: 95%;
+        padding: 15px;
+        display: block;
+    }
+    #imageContainer{
+        margin-bottom: 25px;
+    }
+    #mainImage{
+        height: 250px;
+    }
+    #vehicleInfo{
+        padding: 10px 0;
+    }
+    #vehicleInfo h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    #vehicleInfo p{
+        font-size: 15px;
+        margin: 8px 0;
+    }
+    #vehicleInfo button{
+        width: 100%;
+    }
+    .thumbnail{
+        width: 60px;
+        height: 50px;
+    }
+}
